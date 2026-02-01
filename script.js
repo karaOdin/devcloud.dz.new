@@ -1,4 +1,4 @@
-// DevCloud Corporate Website - Interactions
+// DevCloud — Interactions
 
 (function () {
     'use strict';
@@ -15,7 +15,6 @@
         localStorage.setItem('theme', theme);
     }
 
-    // Apply immediately to prevent flash
     applyTheme(getPreferredTheme());
 
     var themeToggle = document.getElementById('themeToggle');
@@ -26,32 +25,28 @@
         });
     }
 
-    // Listen for system preference changes
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
         if (!localStorage.getItem('theme')) {
             applyTheme(e.matches ? 'dark' : 'light');
         }
     });
 
-    // --- Navigation scroll effect ---
-    const nav = document.getElementById('nav');
-    let lastScroll = 0;
+    // --- Navigation scroll ---
+    var nav = document.getElementById('nav');
 
     function handleNavScroll() {
-        const scrollY = window.scrollY;
-        if (scrollY > 20) {
+        if (window.scrollY > 20) {
             nav.classList.add('scrolled');
         } else {
             nav.classList.remove('scrolled');
         }
-        lastScroll = scrollY;
     }
 
     window.addEventListener('scroll', handleNavScroll, { passive: true });
 
     // --- Mobile nav toggle ---
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
 
     if (navToggle && navLinks) {
         navToggle.addEventListener('click', function () {
@@ -59,7 +54,6 @@
             navToggle.classList.toggle('active');
         });
 
-        // Close on link click
         navLinks.querySelectorAll('a').forEach(function (link) {
             link.addEventListener('click', function () {
                 navLinks.classList.remove('open');
@@ -68,7 +62,7 @@
         });
     }
 
-    // --- Smooth scroll for anchor links ---
+    // --- Smooth scroll ---
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
             var target = document.querySelector(this.getAttribute('href'));
@@ -83,7 +77,7 @@
 
     // --- Scroll reveal ---
     var revealElements = document.querySelectorAll(
-        '.service-card, .about-card, .testimonial-card, .product-layout, .contact-layout, .solution-card, .pp-feature-block, .pp-value-card, .cr-feature-block, .cp-feature-block, .cp-about-card, .cp-process-step, .partnership-layout'
+        '.card, .featured-grid, .partnership-grid, .contact-grid, .hero-stat, .pp-feature-block, .pp-value-card, .cr-feature-block, .cp-feature-block, .cp-about-card, .cp-process-step'
     );
 
     revealElements.forEach(function (el) {
@@ -106,24 +100,20 @@
         revealObserver.observe(el);
     });
 
-    // --- Contact form handling ---
+    // --- Contact form ---
     var contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-
             var btn = contactForm.querySelector('button[type="submit"]');
             var originalText = btn.textContent;
-
             btn.textContent = 'Sending...';
             btn.disabled = true;
 
-            // Simulate form submission (replace with actual endpoint)
             setTimeout(function () {
                 btn.textContent = 'Message Sent';
                 btn.style.background = '#10b981';
                 btn.style.borderColor = '#10b981';
-
                 setTimeout(function () {
                     btn.textContent = originalText;
                     btn.style.background = '';
@@ -135,14 +125,14 @@
         });
     }
 
-    // --- Pause logo animation on hover ---
-    var logosTrack = document.querySelector('.trust-logos-track');
-    if (logosTrack) {
-        logosTrack.addEventListener('mouseenter', function () {
-            logosTrack.style.animationPlayState = 'paused';
+    // --- Pause trust logo scroll on hover ---
+    var trustTrack = document.querySelector('.trust-track');
+    if (trustTrack) {
+        trustTrack.addEventListener('mouseenter', function () {
+            trustTrack.style.animationPlayState = 'paused';
         });
-        logosTrack.addEventListener('mouseleave', function () {
-            logosTrack.style.animationPlayState = 'running';
+        trustTrack.addEventListener('mouseleave', function () {
+            trustTrack.style.animationPlayState = 'running';
         });
     }
 })();
