@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCloud — Software Development & Digital Solutions | Algeria</title>
+    <meta name="description" content="DevCloud delivers enterprise software solutions, cloud platforms, and digital transformation services for organizations across Algeria and North Africa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="logo.jpg" alt="DevCloud" class="nav-logo-img">
+                <span>DevCloud</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#services">Services</a>
+                <a href="#products" class="nav-has-dropdown">Products</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Clients</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <a href="#contact" class="btn btn-secondary btn-sm">Get in Touch</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Software Development Company in Algeria</div>
+                <h1>We build software that powers critical operations</h1>
+                <p class="hero-subtitle">
+                    DevCloud delivers enterprise-grade platforms, cloud solutions, and custom software
+                    for transport authorities, government agencies, and growing businesses across Algeria.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Start a Project</a>
+                    <a href="#services" class="btn btn-outline">View Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">8+</span>
+                        <span class="hero-stat-label">Years in Operation</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">40+</span>
+                        <span class="hero-stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">99.9%</span>
+                        <span class="hero-stat-label">Platform Uptime</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="mockup-title">CloudRoutes Dashboard</div>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-sidebar">
+                            <div class="mockup-nav-item active"></div>
+                            <div class="mockup-nav-item"></div>
+                            <div class="mockup-nav-item"></div>
+                            <div class="mockup-nav-item"></div>
+                            <div class="mockup-nav-item"></div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-stat-row">
+                                <div class="mockup-stat-card">
+                                    <div class="mockup-stat-label">Active Routes</div>
+                                    <div class="mockup-stat-value">247</div>
+                                    <div class="mockup-stat-trend positive">+12%</div>
+                                </div>
+                                <div class="mockup-stat-card">
+                                    <div class="mockup-stat-label">Fleet Vehicles</div>
+                                    <div class="mockup-stat-value">1,204</div>
+                                    <div class="mockup-stat-trend positive">+8%</div>
+                                </div>
+                                <div class="mockup-stat-card">
+                                    <div class="mockup-stat-label">Daily Passengers</div>
+                                    <div class="mockup-stat-value">84.3K</div>
+                                    <div class="mockup-stat-trend positive">+15%</div>
+                                </div>
+                            </div>
+                            <div class="mockup-chart">
+                                <div class="mockup-chart-title">Ridership Trends</div>
+                                <div class="mockup-chart-bars">
+                                    <div class="mockup-bar" style="height: 60%"></div>
+                                    <div class="mockup-bar" style="height: 75%"></div>
+                                    <div class="mockup-bar" style="height: 55%"></div>
+                                    <div class="mockup-bar" style="height: 85%"></div>
+                                    <div class="mockup-bar" style="height: 70%"></div>
+                                    <div class="mockup-bar" style="height: 90%"></div>
+                                    <div class="mockup-bar" style="height: 80%"></div>
+                                    <div class="mockup-bar" style="height: 95%"></div>
+                                    <div class="mockup-bar" style="height: 75%"></div>
+                                    <div class="mockup-bar" style="height: 88%"></div>
+                                    <div class="mockup-bar" style="height: 72%"></div>
+                                    <div class="mockup-bar" style="height: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <p class="trust-bar-label">Trusted by transport organizations across Algeria</p>
+            <div class="trust-logos">
+                <div class="trust-logos-track">
+                    <div class="trust-logo"><img src="images/partners/etus_oran.jpg" alt="ETUS Oran" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_constantine.jpg" alt="ETUS Constantine" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_tarf.jpg" alt="ETUS Tarf" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_mascara.jpg" alt="ETUS Mascara" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_ain_defla.jpg" alt="ETUS Ain Defla" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_saida.jpg" alt="ETUS Saida" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_blida.jpg" alt="ETUS Blida" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_biskra.jpg" alt="ETUS Biskra" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_medea.jpg" alt="ETUS Medea" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_mostaganem.jpg" alt="ETUS Mostaganem" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_djelfa.jpg" alt="ETUS Djelfa" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_tissemsilt.jpg" alt="ETUS Tissemsilt" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_oum_bouaghi.jpg" alt="ETUS Oum El Bouaghi" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_setif.jpg" alt="ETUS Setif" class="partner-logo-img"></div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="trust-logo"><img src="images/partners/etus_oran.jpg" alt="ETUS Oran" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_constantine.jpg" alt="ETUS Constantine" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_tarf.jpg" alt="ETUS Tarf" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_mascara.jpg" alt="ETUS Mascara" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_ain_defla.jpg" alt="ETUS Ain Defla" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_saida.jpg" alt="ETUS Saida" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_blida.jpg" alt="ETUS Blida" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_biskra.jpg" alt="ETUS Biskra" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_medea.jpg" alt="ETUS Medea" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_mostaganem.jpg" alt="ETUS Mostaganem" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_djelfa.jpg" alt="ETUS Djelfa" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_tissemsilt.jpg" alt="ETUS Tissemsilt" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_oum_bouaghi.jpg" alt="ETUS Oum El Bouaghi" class="partner-logo-img"></div>
+                    <div class="trust-logo"><img src="images/partners/etus_setif.jpg" alt="ETUS Setif" class="partner-logo-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Do</span>
+                <h2>End-to-end software development for complex operations</h2>
+                <p>From architecture to deployment, we build systems that organizations depend on every day.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Software Development</h3>
+                    <p>Purpose-built applications designed around your business processes. We work with Laravel, React, Vue.js, and modern cloud-native architectures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                            <line x1="4" y1="22" x2="4" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>SaaS Platform Development</h3>
+                    <p>Multi-tenant cloud platforms with subscription billing, role-based access, and enterprise security. Built for scale from day one.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                        </svg>
+                    </div>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Scalable hosting, CI/CD pipelines, automated deployments, and 24/7 monitoring. Your systems stay online when it matters most.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>SOC-compliant systems with end-to-end encryption, audit logging, and access controls designed for government and regulated industries.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>API & Integration</h3>
+                    <p>Connect your existing systems with modern APIs, payment gateways, government databases, and third-party services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="4" width="22" height="16" rx="2"/>
+                            <path d="M1 10h22"/>
+                        </svg>
+                    </div>
+                    <h3>Mobile & Web Applications</h3>
+                    <p>Responsive web apps and mobile solutions for public-facing services, internal tools, and customer engagement platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product Section -->
+    <section class="product" id="product">
+        <div class="container">
+            <div class="product-layout">
+                <div class="product-info">
+                    <span class="section-label">Featured Product</span>
+                    <h2>CloudRoutes: Bus Company Management Platform</h2>
+                    <p class="product-description">
+                        CloudRoutes is a management platform built for urban and suburban bus companies.
+                        It handles everything from QR ticketing and passenger wallets to agent operations,
+                        fleet GPS tracking, financial reconciliation, and daily reporting — replacing
+                        paper-based workflows with a single digital system.
+                    </p>
+                    <ul class="product-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#6c5ce7" opacity="0.1"/>
+                                <path d="M6 10l3 3 5-5" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            QR-based ticketing and digital passenger wallets
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#6c5ce7" opacity="0.1"/>
+                                <path d="M6 10l3 3 5-5" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Live GPS fleet tracking and route monitoring
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#6c5ce7" opacity="0.1"/>
+                                <path d="M6 10l3 3 5-5" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Agent operations with offline-first capability
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#6c5ce7" opacity="0.1"/>
+                                <path d="M6 10l3 3 5-5" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Financial reconciliation and daily settlements
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#6c5ce7" opacity="0.1"/>
+                                <path d="M6 10l3 3 5-5" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Arabic, French, and English interface
+                        </li>
+                    </ul>
+                    <div class="product-cta-group">
+                        <a href="cloudroutes.html" class="btn btn-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-outline">Request a Demo</a>
+                    </div>
+                </div>
+                <div class="product-visual">
+                    <div class="product-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mockup-title">Route Management</div>
+                        </div>
+                        <div class="mockup-body product-mockup-body">
+                            <div class="map-placeholder">
+                                <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Map background -->
+                                    <rect width="400" height="250" fill="#f0f7ff"/>
+                                    <!-- Grid lines -->
+                                    <line x1="0" y1="50" x2="400" y2="50" stroke="#e2e8f0" stroke-width="0.5"/>
+                                    <line x1="0" y1="100" x2="400" y2="100" stroke="#e2e8f0" stroke-width="0.5"/>
+                                    <line x1="0" y1="150" x2="400" y2="150" stroke="#e2e8f0" stroke-width="0.5"/>
+                                    <line x1="0" y1="200" x2="400" y2="200" stroke="#e2e8f0" stroke-width="0.5"/>
+                                    <line x1="80" y1="0" x2="80" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+                                    <line x1="160" y1="0" x2="160" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+                                    <line x1="240" y1="0" x2="240" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+                                    <line x1="320" y1="0" x2="320" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+                                    <!-- Route paths -->
+                                    <path d="M50 180 Q120 80 200 120 Q280 160 350 70" stroke="#6c5ce7" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    <path d="M30 60 Q100 140 180 100 Q260 60 370 150" stroke="#362466" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="8 4"/>
+                                    <!-- Stops -->
+                                    <circle cx="50" cy="180" r="6" fill="#6c5ce7" stroke="white" stroke-width="2"/>
+                                    <circle cx="200" cy="120" r="6" fill="#6c5ce7" stroke="white" stroke-width="2"/>
+                                    <circle cx="350" cy="70" r="6" fill="#6c5ce7" stroke="white" stroke-width="2"/>
+                                    <circle cx="30" cy="60" r="5" fill="#362466" stroke="white" stroke-width="2"/>
+                                    <circle cx="180" cy="100" r="5" fill="#362466" stroke="white" stroke-width="2"/>
+                                    <circle cx="370" cy="150" r="5" fill="#362466" stroke="white" stroke-width="2"/>
+                                    <!-- Vehicle indicators -->
+                                    <rect x="115" y="90" width="30" height="18" rx="4" fill="#6c5ce7"/>
+                                    <text x="130" y="103" font-family="Inter,sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">B12</text>
+                                    <rect x="270" y="125" width="30" height="18" rx="4" fill="#362466"/>
+                                    <text x="285" y="138" font-family="Inter,sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">B07</text>
+                                </svg>
+                            </div>
+                            <div class="product-mockup-footer">
+                                <div class="mockup-info-card">
+                                    <span class="info-label">Route 12</span>
+                                    <span class="info-value">On Schedule</span>
+                                </div>
+                                <div class="mockup-info-card">
+                                    <span class="info-label">Next Arrival</span>
+                                    <span class="info-value">4 min</span>
+                                </div>
+                                <div class="mockup-info-card">
+                                    <span class="info-label">Occupancy</span>
+                                    <span class="info-value">72%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Solutions Section -->
+    <section class="solutions" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Products</span>
+                <h2>Three platforms, one mission: digitize your operations</h2>
+                <p>Purpose-built solutions for transport, customer engagement, and back-office automation.</p>
+            </div>
+            <div class="solutions-grid">
+                <!-- CloudRoutes Card -->
+                <a href="cloudroutes.html" class="solution-card">
+                    <div class="solution-icon solution-icon--routes">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="10" r="3"/>
+                            <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 10-16 0c0 3 2.7 7 8 11.7z"/>
+                        </svg>
+                    </div>
+                    <h3>CloudRoutes</h3>
+                    <p class="solution-tagline">Bus Company Management</p>
+                    <p class="solution-desc">QR ticketing, passenger wallets, GPS fleet tracking, agent operations, financial reconciliation, and daily reporting for urban and suburban bus companies.</p>
+                    <span class="solution-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </a>
+
+                <!-- AI Chatbots Card -->
+                <a href="ai-chatbots.html" class="solution-card">
+                    <div class="solution-icon solution-icon--ai">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            <path d="M8 10h.01M12 10h.01M16 10h.01"/>
+                        </svg>
+                    </div>
+                    <h3>AI Chatbots</h3>
+                    <p class="solution-tagline">Self-Hosted LLM Assistants</p>
+                    <p class="solution-desc">Private, self-hosted chatbots powered by large language models. Retrieval-augmented generation and fine-tuning on your company's data. Your knowledge stays on your servers.</p>
+                    <span class="solution-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </a>
+
+                <!-- Business Automation Card -->
+                <a href="automation.html" class="solution-card">
+                    <div class="solution-icon solution-icon--auto">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 3 21 3 21 8"/>
+                            <line x1="4" y1="20" x2="21" y2="3"/>
+                            <polyline points="21 16 21 21 16 21"/>
+                            <line x1="15" y1="15" x2="21" y2="21"/>
+                            <line x1="4" y1="4" x2="9" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3>Business Automation</h3>
+                    <p class="solution-tagline">Agentic Workflows &amp; Integration</p>
+                    <p class="solution-desc">End-to-end workflow automation using agentic AI services and tools like n8n. Connect your CRM, ERP, email, databases, and third-party APIs into seamless automated pipelines.</p>
+                    <span class="solution-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Partnership -->
+    <section class="partnership" id="partnership">
+        <div class="container">
+            <div class="partnership-layout">
+                <div class="partnership-content">
+                    <span class="section-label">Strategic Partner</span>
+                    <h2>Official Chargily Integration Partner</h2>
+                    <p class="partnership-lead">We are proud to be a strategic technology partner of <strong>Chargily</strong>, Algeria's leading fintech platform. We build on their infrastructure and deliver seamless payment integration for businesses across Algeria.</p>
+                    <div class="partnership-highlights">
+                        <div class="partnership-highlight">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><strong>Chargily Pay</strong> — Accept CIB and EDAHABIA payments online with secure checkout, payment links, and a free open-source API</span>
+                        </div>
+                        <div class="partnership-highlight">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><strong>Chargily Pro</strong> — Distribute mobile top-ups for Mobilis, Djezzy, Ooredoo, and Idoom through automated API infrastructure</span>
+                        </div>
+                        <div class="partnership-highlight">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><strong>Full-Stack Integration</strong> — We integrate Chargily's payment gateway directly into your applications, e-commerce platforms, and SaaS products</span>
+                        </div>
+                    </div>
+                    <div class="partnership-cta">
+                        <a href="chargily-partnership.html" class="btn btn-primary">Explore the Partnership</a>
+                        <a href="#contact" class="btn btn-outline">Integrate Payments</a>
+                    </div>
+                </div>
+                <div class="partnership-visual">
+                    <div class="partnership-badge">
+                        <div class="partnership-logos">
+                            <div class="partnership-logo-item">
+                                <img src="logo.jpg" alt="DevCloud" class="partnership-logo-img">
+                                <span>DevCloud</span>
+                            </div>
+                            <div class="partnership-connector">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </div>
+                            <div class="partnership-logo-item">
+                                <div class="chargily-logo-wrap">
+                                    <img src="images/chargily-logo-light.svg" alt="Chargily" class="chargily-logo chargily-logo--light">
+                                    <img src="images/chargily-logo-dark.svg" alt="Chargily" class="chargily-logo chargily-logo--dark">
+                                </div>
+                                <span>Chargily</span>
+                            </div>
+                        </div>
+                        <div class="partnership-stats">
+                            <div class="partnership-stat">
+                                <strong>CIB + EDAHABIA</strong>
+                                <span>Payment Methods</span>
+                            </div>
+                            <div class="partnership-stat">
+                                <strong>4 Operators</strong>
+                                <span>Mobile Top-Up</span>
+                            </div>
+                            <div class="partnership-stat">
+                                <strong>99.9%</strong>
+                                <span>Uptime SLA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Why DevCloud -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why DevCloud</span>
+                <h2>Built in Algeria, engineered for the world</h2>
+                <p>We combine local expertise with international engineering standards to deliver software that works.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-number">01</div>
+                    <h3>Deep Local Expertise</h3>
+                    <p>We understand Algerian business requirements, regulatory frameworks, and infrastructure challenges. Our solutions are built for the local context.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-number">02</div>
+                    <h3>Production-Grade Quality</h3>
+                    <p>Every system we ship includes automated testing, monitoring, disaster recovery, and documentation. No shortcuts, no technical debt left behind.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-number">03</div>
+                    <h3>Long-Term Partnership</h3>
+                    <p>We do not disappear after launch. Ongoing maintenance, feature development, and 24/7 support are standard with every engagement.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-number">04</div>
+                    <h3>Modern Tech Stack</h3>
+                    <p>Laravel, React, Vue.js, PostgreSQL, Redis, Docker. We use proven, maintainable technologies that your team can build on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What Our Clients Say</span>
+                <h2>Trusted by organizations that depend on reliability</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card featured">
+                    <div class="testimonial-content">
+                        <svg class="quote-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M10 16H6c0-2.21 1.79-4 4-4V8c-4.42 0-8 3.58-8 8v8h8v-8zm16 0h-4c0-2.21 1.79-4 4-4V8c-4.42 0-8 3.58-8 8v8h8v-8z" fill="currentColor" opacity="0.15"/>
+                        </svg>
+                        <p>"DevCloud transformed how we manage our entire transport network. The CloudRoutes platform handles scheduling for over 200 routes and 1,200 vehicles. Their team understood our operational complexity from day one."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <span>AK</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>Ahmed Khelif</strong>
+                            <span>Director of Operations, ETUSA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <svg class="quote-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M10 16H6c0-2.21 1.79-4 4-4V8c-4.42 0-8 3.58-8 8v8h8v-8zm16 0h-4c0-2.21 1.79-4 4-4V8c-4.42 0-8 3.58-8 8v8h8v-8z" fill="currentColor" opacity="0.15"/>
+                        </svg>
+                        <p>"Reliable, professional, and always available. DevCloud delivered our internal fleet management system on spec and continues to support us with updates and improvements."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <span>SB</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>Samira Benali</strong>
+                            <span>IT Manager, SNTF Rail Division</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <svg class="quote-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M10 16H6c0-2.21 1.79-4 4-4V8c-4.42 0-8 3.58-8 8v8h8v-8zm16 0h-4c0-2.21 1.79-4 4-4V8c-4.42 0-8 3.58-8 8v8h8v-8z" fill="currentColor" opacity="0.15"/>
+                        </svg>
+                        <p>"We needed a partner who could handle government-grade security requirements. DevCloud built us a fully auditable system with complete data sovereignty on Algerian infrastructure."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <span>YM</span>
+                        </div>
+                        <div class="testimonial-info">
+                            <strong>Yacine Mebarki</strong>
+                            <span>CTO, EMA Algiers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to build something that lasts?</h2>
+                <p>Tell us about your project. We will get back to you within 24 hours with an initial assessment.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg">Start a Conversation</a>
+                    <a href="tel:+213555000000" class="btn btn-outline btn-lg">Call Us Directly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <span class="section-label">Get in Touch</span>
+                    <h2>Let's discuss your project</h2>
+                    <p>Whether you need a full platform build, a technical consultation, or ongoing development support, we are here to help.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <strong>Office</strong>
+                                <span>Algiers, Algeria</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <div>
+                                <strong>Phone</strong>
+                                <span>+213 555 123 456</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <div>
+                                <strong>Email</strong>
+                                <span>contact@devcloud.dz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company / Organization</label>
+                            <input type="text" id="company" name="company" placeholder="Your organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="6" fill="#362466"/>
+                            <path d="M8 8h8c4.418 0 8 3.582 8 8s-3.582 8-8 8H8V8zm4 3.5v9h4c2.485 0 4.5-2.015 4.5-4.5S18.485 11.5 16 11.5h-4z" fill="white"/>
+                        </svg>
+                        <span>DevCloud</span>
+                    </a>
+                    <p>Enterprise software development and cloud solutions for organizations across Algeria.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="#services">Custom Development</a>
+                    <a href="#services">SaaS Platforms</a>
+                    <a href="#services">Cloud Infrastructure</a>
+                    <a href="#services">API Integration</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <a href="cloudroutes.html">CloudRoutes</a>
+                    <a href="ai-chatbots.html">AI Chatbots</a>
+                    <a href="automation.html">Business Automation</a>
+                    <a href="chargily-partnership.html">Chargily Partnership</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#testimonials">Clients</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="tel:+213555123456">+213 555 123 456</a>
+                    <a href="mailto:contact@devcloud.dz">contact@devcloud.dz</a>
+                    <span>Algiers, Algeria</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 DevCloud. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbots — Self-Hosted LLM Assistants | DevCloud</title>
+    <meta name="description" content="Private, self-hosted AI chatbots with retrieval-augmented generation and fine-tuning. Your company knowledge, your servers, your control.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-pages.css">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.jpg" alt="DevCloud" class="nav-logo-img">
+                <span>DevCloud</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#products">Products</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#testimonials">Clients</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <a href="index.html#contact" class="btn btn-secondary btn-sm">Get in Touch</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="pp-hero">
+        <div class="container">
+            <div class="pp-hero-content">
+                <a href="index.html#products" class="pp-breadcrumb">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                    All Products
+                </a>
+                <div class="pp-hero-badge pp-badge--ai">AI Chatbots</div>
+                <h1>Your company knowledge,<br>always available</h1>
+                <p class="pp-hero-description">
+                    Self-hosted chatbots powered by large language models. We deploy private AI assistants
+                    that understand your business — trained on your documents, policies, and processes.
+                    Retrieval-augmented generation and fine-tuning keep answers accurate. Everything runs
+                    on your own infrastructure. Nothing leaves your servers.
+                </p>
+                <div class="pp-hero-cta">
+                    <a href="index.html#contact" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="#features" class="btn btn-outline btn-lg">See Capabilities</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Value Props -->
+    <section class="pp-values">
+        <div class="container">
+            <div class="pp-values-grid">
+                <div class="pp-value-card">
+                    <div class="pp-value-icon pp-icon--ai">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Fully Self-Hosted</h3>
+                    <p>Your data never leaves your servers. Complete sovereignty over company knowledge and customer conversations.</p>
+                </div>
+                <div class="pp-value-card">
+                    <div class="pp-value-icon pp-icon--ai">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </div>
+                    <h3>RAG-Powered Answers</h3>
+                    <p>Retrieval-augmented generation pulls real information from your documents before the model generates a response.</p>
+                </div>
+                <div class="pp-value-card">
+                    <div class="pp-value-icon pp-icon--ai">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <h3>Fine-Tuned to Your Domain</h3>
+                    <p>Models trained on your terminology, your processes, and your context. Accurate answers on the first try.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="pp-features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Capabilities</span>
+                <h2>AI that knows your business as well as your best employee</h2>
+                <p>From document ingestion to customer-facing deployment, every piece is built for enterprise use.</p>
+            </div>
+
+            <div class="pp-features-list">
+
+                <!-- Feature 1 -->
+                <div class="pp-feature-block">
+                    <div class="pp-feature-text">
+                        <div class="pp-feature-number">01</div>
+                        <h3>Private Document Ingestion</h3>
+                        <p>Feed the system your internal documents — PDFs, Word files, spreadsheets, knowledge bases, wikis, and FAQ archives. The pipeline chunks, embeds, and indexes everything into a vector store optimized for fast retrieval.</p>
+                        <ul class="pp-feature-details">
+                            <li>Supports PDF, DOCX, XLSX, HTML, Markdown, and plain text</li>
+                            <li>Automatic chunking with configurable overlap</li>
+                            <li>Vector embedding using open-source models</li>
+                            <li>Incremental updates — add new documents without re-indexing</li>
+                        </ul>
+                    </div>
+                    <div class="pp-feature-visual">
+                        <div class="pp-mock-card">
+                            <div class="pp-mock-header">Document Pipeline</div>
+                            <div class="pp-mock-flow">
+                                <div class="pp-flow-step">
+                                    <div class="pp-flow-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                    </div>
+                                    <span>Upload</span>
+                                </div>
+                                <div class="pp-flow-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                                <div class="pp-flow-step">
+                                    <div class="pp-flow-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+                                    </div>
+                                    <span>Chunk</span>
+                                </div>
+                                <div class="pp-flow-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                                <div class="pp-flow-step">
+                                    <div class="pp-flow-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+                                    </div>
+                                    <span>Embed</span>
+                                </div>
+                                <div class="pp-flow-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                                <div class="pp-flow-step active">
+                                    <div class="pp-flow-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                                    </div>
+                                    <span>Index</span>
+                                </div>
+                            </div>
+                            <div class="pp-mock-stats">
+                                <div class="pp-mock-stat">
+                                    <span class="pp-stat-value">2,847</span>
+                                    <span class="pp-stat-label">Documents indexed</span>
+                                </div>
+                                <div class="pp-mock-stat">
+                                    <span class="pp-stat-value">148K</span>
+                                    <span class="pp-stat-label">Chunks stored</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="pp-feature-block reverse">
+                    <div class="pp-feature-text">
+                        <div class="pp-feature-number">02</div>
+                        <h3>Retrieval-Augmented Generation</h3>
+                        <p>When a user asks a question, the system retrieves the most relevant passages from your indexed knowledge base and provides them as context to the language model. The result is grounded, factual answers instead of hallucinated guesses.</p>
+                        <ul class="pp-feature-details">
+                            <li>Semantic search across your entire knowledge base</li>
+                            <li>Source citations included with every answer</li>
+                            <li>Configurable retrieval depth and relevance thresholds</li>
+                            <li>Fallback responses when confidence is low</li>
+                        </ul>
+                    </div>
+                    <div class="pp-feature-visual">
+                        <div class="pp-mock-card">
+                            <div class="pp-mock-header">RAG Pipeline</div>
+                            <div class="pp-mock-chat">
+                                <div class="pp-chat-msg user">
+                                    <span class="pp-chat-label">User</span>
+                                    <p>What is the refund policy for monthly passes?</p>
+                                </div>
+                                <div class="pp-chat-context">
+                                    <span class="pp-chat-label">Retrieved context</span>
+                                    <p>Policy Doc v3.2, Section 4.1: Monthly passes may be refunded within 7 days of purchase if unused...</p>
+                                </div>
+                                <div class="pp-chat-msg assistant">
+                                    <span class="pp-chat-label">AI Assistant</span>
+                                    <p>Monthly passes can be refunded within 7 days if unused. After first use, a prorated refund applies.</p>
+                                    <span class="pp-chat-source">Source: Policy Doc v3.2, Section 4.1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="pp-feature-block">
+                    <div class="pp-feature-text">
+                        <div class="pp-feature-number">03</div>
+                        <h3>Domain-Specific Fine-Tuning</h3>
+                        <p>Go beyond RAG. Fine-tune open-source LLMs on your company's language, terminology, and decision patterns. The model learns how your business communicates — not just what it knows.</p>
+                        <ul class="pp-feature-details">
+                            <li>Fine-tuning on company-specific Q&A pairs</li>
+                            <li>Tone and style alignment to your brand voice</li>
+                            <li>Industry terminology and abbreviation handling</li>
+                            <li>Continuous improvement with feedback loops</li>
+                        </ul>
+                    </div>
+                    <div class="pp-feature-visual">
+                        <div class="pp-mock-card">
+                            <div class="pp-mock-header">Fine-Tuning Dashboard</div>
+                            <div class="pp-mock-training">
+                                <div class="pp-training-row">
+                                    <span class="pp-training-label">Base Model</span>
+                                    <span class="pp-training-value">Llama 3.1 8B</span>
+                                </div>
+                                <div class="pp-training-row">
+                                    <span class="pp-training-label">Training Pairs</span>
+                                    <span class="pp-training-value">4,200</span>
+                                </div>
+                                <div class="pp-training-row">
+                                    <span class="pp-training-label">Domain Accuracy</span>
+                                    <span class="pp-training-value good">94.7%</span>
+                                </div>
+                                <div class="pp-training-row">
+                                    <span class="pp-training-label">Status</span>
+                                    <span class="pp-training-badge">Production Ready</span>
+                                </div>
+                                <div class="pp-training-bar">
+                                    <div class="pp-training-progress" style="width: 95%"></div>
+                                </div>
+                                <div class="pp-training-epochs">Epoch 12 / 12 complete</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="pp-feature-block reverse">
+                    <div class="pp-feature-text">
+                        <div class="pp-feature-number">04</div>
+                        <h3>Multi-Channel Deployment</h3>
+                        <p>Deploy your chatbot wherever your customers and employees already are. Embed it on your website, connect it to WhatsApp, integrate it into your internal tools, or expose it via API.</p>
+                        <ul class="pp-feature-details">
+                            <li>Embeddable web widget for your website</li>
+                            <li>WhatsApp Business API integration</li>
+                            <li>Internal tools integration via REST API</li>
+                            <li>Custom frontend with your branding</li>
+                        </ul>
+                    </div>
+                    <div class="pp-feature-visual">
+                        <div class="pp-mock-card">
+                            <div class="pp-mock-header">Deployment Channels</div>
+                            <div class="pp-mock-channels">
+                                <div class="pp-channel active">
+                                    <div class="pp-channel-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                                    </div>
+                                    <div class="pp-channel-info">
+                                        <span class="pp-channel-name">Website Widget</span>
+                                        <span class="pp-channel-status live">Live</span>
+                                    </div>
+                                </div>
+                                <div class="pp-channel active">
+                                    <div class="pp-channel-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                                    </div>
+                                    <div class="pp-channel-info">
+                                        <span class="pp-channel-name">WhatsApp</span>
+                                        <span class="pp-channel-status live">Live</span>
+                                    </div>
+                                </div>
+                                <div class="pp-channel">
+                                    <div class="pp-channel-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                                    </div>
+                                    <div class="pp-channel-info">
+                                        <span class="pp-channel-name">REST API</span>
+                                        <span class="pp-channel-status">Ready</span>
+                                    </div>
+                                </div>
+                                <div class="pp-channel">
+                                    <div class="pp-channel-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                    </div>
+                                    <div class="pp-channel-info">
+                                        <span class="pp-channel-name">Internal Portal</span>
+                                        <span class="pp-channel-status">Staging</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="pp-feature-block">
+                    <div class="pp-feature-text">
+                        <div class="pp-feature-number">05</div>
+                        <h3>Conversation Analytics</h3>
+                        <p>Track what users ask, which answers satisfy them, and where the system struggles. Use analytics to improve your knowledge base, refine the model, and measure deflection rates against human support.</p>
+                        <ul class="pp-feature-details">
+                            <li>Query frequency and topic clustering</li>
+                            <li>User satisfaction scoring per conversation</li>
+                            <li>Unanswered question detection for knowledge gaps</li>
+                            <li>Support deflection rate tracking</li>
+                        </ul>
+                    </div>
+                    <div class="pp-feature-visual">
+                        <div class="pp-mock-card">
+                            <div class="pp-mock-header">Analytics Overview</div>
+                            <div class="pp-mock-analytics">
+                                <div class="pp-analytics-stat">
+                                    <span class="pp-analytics-number">12,480</span>
+                                    <span class="pp-analytics-label">Conversations this month</span>
+                                </div>
+                                <div class="pp-analytics-row">
+                                    <span class="pp-analytics-metric">Resolution rate</span>
+                                    <div class="pp-analytics-bar-wrapper">
+                                        <div class="pp-analytics-bar" style="width: 87%"></div>
+                                    </div>
+                                    <span class="pp-analytics-pct">87%</span>
+                                </div>
+                                <div class="pp-analytics-row">
+                                    <span class="pp-analytics-metric">Satisfaction</span>
+                                    <div class="pp-analytics-bar-wrapper">
+                                        <div class="pp-analytics-bar" style="width: 92%"></div>
+                                    </div>
+                                    <span class="pp-analytics-pct">92%</span>
+                                </div>
+                                <div class="pp-analytics-row">
+                                    <span class="pp-analytics-metric">Deflection</span>
+                                    <div class="pp-analytics-bar-wrapper">
+                                        <div class="pp-analytics-bar" style="width: 74%"></div>
+                                    </div>
+                                    <span class="pp-analytics-pct">74%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="pp-feature-block reverse">
+                    <div class="pp-feature-text">
+                        <div class="pp-feature-number">06</div>
+                        <h3>Role-Based Access and Admin Control</h3>
+                        <p>Control who can manage the knowledge base, who can view analytics, and which chatbot personas serve which departments. Full audit logging on every configuration change.</p>
+                        <ul class="pp-feature-details">
+                            <li>Admin, editor, and viewer roles</li>
+                            <li>Per-department chatbot personas and knowledge scoping</li>
+                            <li>Audit log on all changes</li>
+                            <li>SSO integration with your identity provider</li>
+                        </ul>
+                    </div>
+                    <div class="pp-feature-visual">
+                        <div class="pp-mock-card">
+                            <div class="pp-mock-header">Access Control</div>
+                            <div class="pp-mock-roles">
+                                <div class="pp-role-row">
+                                    <div class="pp-role-avatar">A</div>
+                                    <div class="pp-role-info">
+                                        <span class="pp-role-name">Admin Team</span>
+                                        <span class="pp-role-perm">Full access</span>
+                                    </div>
+                                    <span class="pp-role-badge admin">Admin</span>
+                                </div>
+                                <div class="pp-role-row">
+                                    <div class="pp-role-avatar">S</div>
+                                    <div class="pp-role-info">
+                                        <span class="pp-role-name">Support Desk</span>
+                                        <span class="pp-role-perm">View conversations, manage KB</span>
+                                    </div>
+                                    <span class="pp-role-badge editor">Editor</span>
+                                </div>
+                                <div class="pp-role-row">
+                                    <div class="pp-role-avatar">M</div>
+                                    <div class="pp-role-info">
+                                        <span class="pp-role-name">Management</span>
+                                        <span class="pp-role-perm">Analytics only</span>
+                                    </div>
+                                    <span class="pp-role-badge viewer">Viewer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Put your company knowledge to work</h2>
+                <p>We will assess your documents, recommend the right model architecture, and deploy a working prototype on your infrastructure.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary btn-lg">Start a Conversation</a>
+                    <a href="tel:+213555123456" class="btn btn-outline btn-lg">Call Us Directly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="logo.jpg" alt="DevCloud" class="nav-logo-img">
+                        <span>DevCloud</span>
+                    </a>
+                    <p>Enterprise software development and cloud solutions for organizations across Algeria.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <a href="index.html#services">Custom Development</a>
+                    <a href="index.html#services">SaaS Platforms</a>
+                    <a href="index.html#services">Cloud Infrastructure</a>
+                    <a href="index.html#services">API Integration</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <a href="cloudroutes.html">CloudRoutes</a>
+                    <a href="ai-chatbots.html">AI Chatbots</a>
+                    <a href="automation.html">Business Automation</a>
+                    <a href="chargily-partnership.html">Chargily Partnership</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="index.html#about">About Us</a>
+                    <a href="index.html#testimonials">Clients</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="tel:+213555123456">+213 555 123 456</a>
+                    <a href="mailto:contact@devcloud.dz">contact@devcloud.dz</a>
+                    <span>Algiers, Algeria</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2026 DevCloud. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

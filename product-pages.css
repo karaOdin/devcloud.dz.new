@@ -1,0 +1,1209 @@
+/* ===================================
+   Shared Product Page Styles
+   AI Chatbots + Business Automation
+   =================================== */
+
+/* --- Hero --- */
+.pp-hero {
+    padding: 140px 0 80px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.pp-hero-content {
+    max-width: 680px;
+}
+
+.pp-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    transition: color var(--transition);
+}
+
+.pp-breadcrumb:hover {
+    color: var(--text-secondary);
+}
+
+.pp-hero-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.pp-badge--ai {
+    color: #362466;
+    background: rgba(54, 36, 102, 0.08);
+    border: 1px solid rgba(54, 36, 102, 0.15);
+}
+
+.pp-badge--auto {
+    color: #d97706;
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.15);
+}
+
+.pp-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.pp-hero-description {
+    font-size: 17px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.pp-hero-cta {
+    display: flex;
+    gap: 12px;
+}
+
+/* --- Value Props --- */
+.pp-values {
+    padding: 64px 0;
+    background: var(--bg-subtle);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.pp-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.pp-value-card {
+    padding: 28px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition);
+}
+
+.pp-value-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.pp-value-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.pp-icon--ai {
+    background: rgba(54, 36, 102, 0.08);
+    color: #362466;
+}
+
+.pp-icon--auto {
+    background: rgba(245, 158, 11, 0.08);
+    color: #d97706;
+}
+
+.pp-value-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.pp-value-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Features --- */
+.pp-features {
+    padding: 120px 0;
+    background: var(--bg);
+}
+
+.pp-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+}
+
+.pp-feature-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.pp-feature-block.reverse {
+    direction: rtl;
+}
+
+.pp-feature-block.reverse > * {
+    direction: ltr;
+}
+
+.pp-feature-number {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 12px;
+    font-variant-numeric: tabular-nums;
+}
+
+.pp-feature-text h3 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.pp-feature-text > p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.pp-feature-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pp-feature-details li {
+    font-size: 14px;
+    color: var(--text-secondary);
+    padding-left: 24px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.pp-feature-details li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(108, 92, 231, 0.2);
+    border: 2px solid var(--accent);
+}
+
+.pp-feature-visual {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Mock Cards (shared) --- */
+.pp-mock-card {
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    width: 100%;
+    max-width: 460px;
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.pp-mock-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.pp-mock-header {
+    padding: 14px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: var(--bg-subtle);
+    border-bottom: 1px solid var(--border);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* --- Document Pipeline Mock --- */
+.pp-mock-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 24px 20px;
+}
+
+.pp-flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    min-width: 64px;
+}
+
+.pp-flow-step.active {
+    border-color: var(--accent);
+    background: rgba(108, 92, 231, 0.04);
+}
+
+.pp-flow-icon {
+    color: var(--text-secondary);
+}
+
+.pp-flow-step.active .pp-flow-icon {
+    color: var(--accent);
+}
+
+.pp-flow-step span {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.pp-flow-arrow {
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.pp-mock-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border-top: 1px solid var(--border);
+}
+
+.pp-mock-stat {
+    background: var(--bg);
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pp-stat-value {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: -0.01em;
+}
+
+.pp-stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* --- Chat Mock (RAG) --- */
+.pp-mock-chat {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pp-chat-msg,
+.pp-chat-context {
+    padding: 12px 14px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.pp-chat-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+}
+
+.pp-chat-msg.user {
+    background: var(--bg);
+    border: 1px solid var(--border);
+}
+
+.pp-chat-msg.user .pp-chat-label {
+    color: var(--text-muted);
+}
+
+.pp-chat-msg.user p {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.pp-chat-context {
+    background: rgba(54, 36, 102, 0.04);
+    border: 1px dashed rgba(54, 36, 102, 0.2);
+}
+
+.pp-chat-context .pp-chat-label {
+    color: #362466;
+}
+
+.pp-chat-context p {
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-style: italic;
+}
+
+.pp-chat-msg.assistant {
+    background: var(--bg);
+    border: 1px solid var(--accent);
+    border-left: 3px solid var(--accent);
+}
+
+.pp-chat-msg.assistant .pp-chat-label {
+    color: var(--accent);
+}
+
+.pp-chat-msg.assistant p {
+    color: var(--text);
+}
+
+.pp-chat-source {
+    display: block;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* --- Training Mock --- */
+.pp-mock-training {
+    padding: 16px 20px;
+}
+
+.pp-training-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.pp-training-row:last-of-type {
+    border-bottom: none;
+}
+
+.pp-training-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.pp-training-value {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.pp-training-value.good {
+    color: #059669;
+}
+
+.pp-training-badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 100px;
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+}
+
+.pp-training-bar {
+    height: 6px;
+    background: var(--bg-muted);
+    border-radius: 100px;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.pp-training-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #362466, #6c5ce7);
+    border-radius: 100px;
+}
+
+.pp-training-epochs {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* --- Channels Mock --- */
+.pp-mock-channels {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pp-channel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+}
+
+.pp-channel.active {
+    border-color: rgba(108, 92, 231, 0.3);
+}
+
+.pp-channel-icon {
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.pp-channel.active .pp-channel-icon {
+    color: var(--accent);
+}
+
+.pp-channel-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.pp-channel-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.pp-channel-status {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.pp-channel-status.live {
+    color: #059669;
+}
+
+/* --- Analytics Mock --- */
+.pp-mock-analytics {
+    padding: 20px;
+}
+
+.pp-analytics-stat {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.pp-analytics-number {
+    display: block;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: -0.02em;
+}
+
+.pp-analytics-label {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.pp-analytics-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.pp-analytics-row:last-child {
+    margin-bottom: 0;
+}
+
+.pp-analytics-metric {
+    font-size: 13px;
+    color: var(--text-secondary);
+    width: 90px;
+    flex-shrink: 0;
+}
+
+.pp-analytics-bar-wrapper {
+    flex: 1;
+    height: 6px;
+    background: var(--bg-muted);
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.pp-analytics-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #362466, #6c5ce7);
+    border-radius: 100px;
+}
+
+.pp-analytics-pct {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    width: 36px;
+    text-align: right;
+}
+
+/* --- Roles Mock --- */
+.pp-mock-roles {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pp-role-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.pp-role-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.pp-role-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pp-role-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.pp-role-perm {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.pp-role-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 100px;
+}
+
+.pp-role-badge.admin {
+    background: rgba(54, 36, 102, 0.1);
+    color: #362466;
+}
+
+.pp-role-badge.editor {
+    background: rgba(108, 92, 231, 0.1);
+    color: var(--accent);
+}
+
+.pp-role-badge.viewer {
+    background: rgba(100, 116, 139, 0.1);
+    color: var(--text-secondary);
+}
+
+/* ===================================
+   Automation Page Specific Mocks
+   =================================== */
+
+/* --- Workflow Builder Mock --- */
+.pp-mock-workflow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 24px 16px;
+    overflow-x: auto;
+}
+
+.pp-wf-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    min-width: 72px;
+    flex-shrink: 0;
+}
+
+.pp-wf-node span {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.pp-wf-node small {
+    font-size: 10px;
+    color: var(--text-muted);
+}
+
+.pp-wf-node-icon {
+    color: var(--text-secondary);
+}
+
+.pp-wf-node.trigger {
+    border-color: #059669;
+    background: rgba(16, 185, 129, 0.04);
+}
+
+.pp-wf-node.trigger .pp-wf-node-icon { color: #059669; }
+
+.pp-wf-node.process {
+    border-color: var(--accent);
+    background: rgba(108, 92, 231, 0.04);
+}
+
+.pp-wf-node.process .pp-wf-node-icon { color: var(--accent); }
+
+.pp-wf-node.decision {
+    border-color: #d97706;
+    background: rgba(245, 158, 11, 0.04);
+}
+
+.pp-wf-node.decision .pp-wf-node-icon { color: #d97706; }
+
+.pp-wf-node.action {
+    border-color: #362466;
+    background: rgba(54, 36, 102, 0.04);
+}
+
+.pp-wf-node.action .pp-wf-node-icon { color: #362466; }
+
+.pp-wf-connector {
+    width: 24px;
+    height: 2px;
+    background: var(--border);
+    flex-shrink: 0;
+}
+
+/* --- Agent Activity Log --- */
+.pp-mock-agent-log {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pp-agent-event {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.pp-event-time {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+    padding-top: 1px;
+}
+
+.pp-event-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pp-event-action {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.pp-event-detail {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.pp-event-badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 100px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.pp-event-badge.auto {
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+}
+
+.pp-event-badge.escalate {
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+}
+
+/* --- Integration Map --- */
+.pp-mock-integrations {
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.pp-integration-hub {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+}
+
+.pp-integration-spokes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 320px;
+}
+
+.pp-spoke {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pp-spoke span {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+}
+
+/* --- Notification Rules Mock --- */
+.pp-mock-notifications {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pp-notif-rule {
+    padding: 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.pp-notif-condition {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.pp-notif-actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.pp-notif-channel {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 100px;
+    background: var(--bg-muted);
+    color: var(--text-secondary);
+}
+
+/* --- Document Pipeline Mock --- */
+.pp-mock-doc-pipeline {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pp-doc-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.pp-doc-icon {
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.pp-doc-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pp-doc-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.pp-doc-type {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.pp-doc-status {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 100px;
+    flex-shrink: 0;
+}
+
+.pp-doc-status.processed {
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+}
+
+.pp-doc-status.processing {
+    background: rgba(108, 92, 231, 0.1);
+    color: var(--accent);
+}
+
+.pp-doc-status.flagged {
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+}
+
+/* --- Execution Log Mock --- */
+.pp-mock-exec-log {
+    padding: 12px 20px;
+}
+
+.pp-exec-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.pp-exec-row:last-child {
+    border-bottom: none;
+}
+
+.pp-exec-id {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+    width: 56px;
+    flex-shrink: 0;
+}
+
+.pp-exec-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    flex: 1;
+}
+
+.pp-exec-time {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.pp-exec-status {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 100px;
+    flex-shrink: 0;
+}
+
+.pp-exec-status.success {
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+}
+
+.pp-exec-status.failed {
+    background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .pp-feature-block {
+        gap: 48px;
+    }
+
+    .pp-feature-text h3 {
+        font-size: 24px;
+    }
+
+    .pp-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pp-values-grid .pp-value-card:last-child {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .pp-hero {
+        padding: 100px 0 60px;
+    }
+
+    .pp-hero h1 {
+        font-size: 36px;
+    }
+
+    .pp-hero-cta {
+        flex-direction: column;
+    }
+
+    .pp-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pp-values-grid .pp-value-card:last-child {
+        grid-column: span 1;
+    }
+
+    .pp-feature-block,
+    .pp-feature-block.reverse {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        direction: ltr;
+    }
+
+    .pp-feature-visual {
+        justify-content: stretch;
+    }
+
+    .pp-mock-card {
+        max-width: 100%;
+    }
+
+    .pp-features-list {
+        gap: 64px;
+    }
+
+    .pp-feature-text h3 {
+        font-size: 22px;
+    }
+
+    .pp-mock-flow {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .pp-flow-arrow {
+        display: none;
+    }
+
+    .pp-mock-workflow {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .pp-wf-connector {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pp-hero h1 {
+        font-size: 28px;
+    }
+}
+
+/* --- Dark Mode Overrides --- */
+[data-theme="dark"] .pp-badge--ai {
+    color: var(--accent);
+    background: rgba(167, 139, 250, 0.1);
+    border-color: rgba(167, 139, 250, 0.2);
+}
+
+[data-theme="dark"] .pp-badge--auto {
+    color: #fbbf24;
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+[data-theme="dark"] .pp-icon--ai {
+    background: rgba(167, 139, 250, 0.1);
+    color: var(--accent);
+}
+
+[data-theme="dark"] .pp-icon--auto {
+    background: rgba(245, 158, 11, 0.1);
+    color: #fbbf24;
+}
+
+[data-theme="dark"] .pp-feature-details li::before {
+    background: rgba(167, 139, 250, 0.2);
+    border-color: var(--accent);
+}
+
+[data-theme="dark"] .pp-flow-step.active {
+    border-color: var(--accent);
+    background: rgba(167, 139, 250, 0.08);
+}
+
+[data-theme="dark"] .pp-chat-context {
+    background: rgba(167, 139, 250, 0.06);
+    border-color: rgba(167, 139, 250, 0.15);
+}
+
+[data-theme="dark"] .pp-chat-context .pp-chat-label {
+    color: var(--accent);
+}
+
+[data-theme="dark"] .pp-chat-msg.assistant {
+    border-color: var(--accent);
+    border-left-color: var(--accent);
+}
+
+[data-theme="dark"] .pp-training-badge {
+    background: rgba(16, 185, 129, 0.15);
+}
+
+[data-theme="dark"] .pp-training-progress {
+    background: linear-gradient(90deg, #362466, var(--accent));
+}
+
+[data-theme="dark"] .pp-training-value.good {
+    color: #34d399;
+}
+
+[data-theme="dark"] .pp-channel.active {
+    border-color: rgba(167, 139, 250, 0.3);
+}
+
+[data-theme="dark"] .pp-channel-status.live {
+    color: #34d399;
+}
+
+[data-theme="dark"] .pp-analytics-bar {
+    background: linear-gradient(90deg, #362466, var(--accent));
+}
+
+[data-theme="dark"] .pp-role-badge.admin {
+    background: rgba(167, 139, 250, 0.15);
+    color: var(--accent);
+}
+
+[data-theme="dark"] .pp-role-badge.editor {
+    background: rgba(167, 139, 250, 0.1);
+    color: #c4b5fd;
+}
+
+[data-theme="dark"] .pp-wf-node.trigger {
+    border-color: #34d399;
+    background: rgba(16, 185, 129, 0.08);
+}
+
+[data-theme="dark"] .pp-wf-node.process {
+    border-color: var(--accent);
+    background: rgba(167, 139, 250, 0.08);
+}
+
+[data-theme="dark"] .pp-wf-node.decision {
+    border-color: #fbbf24;
+    background: rgba(245, 158, 11, 0.08);
+}
+
+[data-theme="dark"] .pp-wf-node.action {
+    border-color: #c4b5fd;
+    background: rgba(167, 139, 250, 0.06);
+}
+
+[data-theme="dark"] .pp-event-badge.auto {
+    background: rgba(16, 185, 129, 0.15);
+}
+
+[data-theme="dark"] .pp-event-badge.escalate {
+    background: rgba(245, 158, 11, 0.15);
+}
+
+[data-theme="dark"] .pp-doc-status.processed {
+    background: rgba(16, 185, 129, 0.15);
+}
+
+[data-theme="dark"] .pp-doc-status.processing {
+    background: rgba(167, 139, 250, 0.15);
+}
+
+[data-theme="dark"] .pp-doc-status.flagged {
+    background: rgba(245, 158, 11, 0.15);
+}
+
+[data-theme="dark"] .pp-exec-status.success {
+    background: rgba(16, 185, 129, 0.15);
+}
+
+[data-theme="dark"] .pp-exec-status.failed {
+    background: rgba(239, 68, 68, 0.15);
+}

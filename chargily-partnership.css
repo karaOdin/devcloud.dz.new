@@ -1,0 +1,736 @@
+/* === Chargily Partnership Page Styles === */
+
+/* --- Hero --- */
+.cp-hero {
+    padding: 160px 0 100px;
+    background: var(--bg);
+    text-align: center;
+}
+
+.cp-hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.cp-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: rgba(108, 92, 231, 0.08);
+    border: 1px solid rgba(108, 92, 231, 0.15);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 28px;
+}
+
+.cp-hero-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.cp-hero-logo-img {
+    height: 72px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+.cp-plus-large {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.cp-hero-chargily-logo {
+    display: flex;
+    align-items: center;
+}
+
+.cp-hero-chargily-logo .chargily-logo {
+    height: 80px;
+}
+
+.cp-hero h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+}
+
+.cp-plus {
+    color: var(--accent);
+}
+
+.cp-hero-desc {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+.cp-hero-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* --- About Chargily --- */
+.cp-about {
+    padding: 120px 0;
+    background: var(--bg-subtle);
+    border-top: 1px solid var(--border-light);
+}
+
+.cp-about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.cp-about-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.cp-about-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    background: rgba(108, 92, 231, 0.08);
+    border-radius: 12px;
+    color: var(--accent);
+}
+
+.cp-about-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.cp-about-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Feature Blocks --- */
+.cp-features {
+    padding: 120px 0;
+    background: var(--bg);
+}
+
+.cp-feature-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.cp-feature-block:last-child {
+    margin-bottom: 0;
+}
+
+.cp-feature-block--reverse {
+    direction: rtl;
+}
+
+.cp-feature-block--reverse > * {
+    direction: ltr;
+}
+
+.cp-feature-label {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.cp-label--pay {
+    background: rgba(26, 75, 140, 0.08);
+    color: #1a4b8c;
+    border: 1px solid rgba(26, 75, 140, 0.15);
+}
+
+.cp-label--pro {
+    background: rgba(212, 168, 67, 0.08);
+    color: #b8860b;
+    border: 1px solid rgba(212, 168, 67, 0.15);
+}
+
+.cp-label--devcloud {
+    background: rgba(108, 92, 231, 0.08);
+    color: var(--accent);
+    border: 1px solid rgba(108, 92, 231, 0.15);
+}
+
+.cp-feature-content h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.cp-feature-content > p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.cp-feature-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cp-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.cp-feature-list li svg {
+    flex-shrink: 0;
+    color: var(--accent);
+    margin-top: 2px;
+}
+
+/* --- Mockups --- */
+.cp-mockup {
+    display: flex;
+    justify-content: center;
+}
+
+/* Checkout Mockup */
+.cp-checkout-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.cp-checkout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.cp-checkout-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.cp-checkout-amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.cp-checkout-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.cp-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.cp-method span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    flex: 1;
+}
+
+.cp-method-radio {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+}
+
+.cp-method--active {
+    border-color: var(--accent);
+    background: rgba(108, 92, 231, 0.03);
+}
+
+.cp-method--active .cp-method-radio {
+    border-color: var(--accent);
+    background: var(--accent);
+    box-shadow: inset 0 0 0 3px var(--bg);
+}
+
+.cp-checkout-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.cp-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cp-field-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cp-field-value {
+    font-size: 0.9rem;
+    color: var(--text);
+    padding: 10px 14px;
+    background: var(--bg-muted);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: 'Inter', monospace;
+}
+
+.cp-field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.cp-checkout-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cp-checkout-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Pro Distribution Mockup */
+.cp-pro-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.cp-pro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.cp-pro-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.cp-pro-status {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.08);
+    padding: 4px 12px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cp-pro-operators {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.cp-operator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: var(--bg-subtle);
+    border-radius: 10px;
+}
+
+.cp-operator-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.cp-op--mobilis { background: #00a550; }
+.cp-op--djezzy { background: #e4002b; }
+.cp-op--ooredoo { background: #e4002b; }
+.cp-op--idoom { background: #0066b3; }
+
+.cp-operator-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cp-operator-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.cp-operator-vol {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.cp-operator-status {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 10px;
+    border-radius: 100px;
+}
+
+.cp-operator-status.active {
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.08);
+}
+
+.cp-pro-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-light);
+}
+
+.cp-pro-metric {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cp-pro-metric-val {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.cp-pro-metric-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Integration Pipeline Mockup */
+.cp-integration-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.cp-integration-header {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.cp-integration-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.cp-flow-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    min-width: 80px;
+}
+
+.cp-flow-node span {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.cp-flow--app {
+    background: rgba(16, 185, 129, 0.05);
+    border-color: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}
+
+.cp-flow--devcloud {
+    background: rgba(108, 92, 231, 0.05);
+    border-color: rgba(108, 92, 231, 0.2);
+    color: var(--accent);
+}
+
+.cp-flow--chargily {
+    background: rgba(26, 75, 140, 0.05);
+    border-color: rgba(26, 75, 140, 0.2);
+    color: #1a4b8c;
+}
+
+.cp-flow-arrow {
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.cp-integration-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.cp-int-service {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    padding: 8px 10px;
+    background: var(--bg-subtle);
+    border-radius: 8px;
+}
+
+.cp-int-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+}
+
+/* --- Process Section --- */
+.cp-process {
+    padding: 120px 0;
+    background: var(--bg-subtle);
+    border-top: 1px solid var(--border-light);
+}
+
+.cp-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 56px;
+}
+
+.cp-process-step {
+    text-align: center;
+    padding: 32px 20px;
+}
+
+.cp-step-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent);
+    opacity: 0.3;
+    margin-bottom: 16px;
+}
+
+.cp-process-step h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.cp-process-step p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .cp-feature-block {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    .cp-feature-block--reverse {
+        direction: ltr;
+    }
+    .cp-about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cp-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cp-hero {
+        padding: 140px 0 80px;
+    }
+    .cp-hero h1 {
+        font-size: 2.2rem;
+    }
+    .cp-hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cp-about,
+    .cp-features,
+    .cp-process {
+        padding: 80px 0;
+    }
+    .cp-feature-block {
+        margin-bottom: 80px;
+    }
+    .cp-about-grid {
+        grid-template-columns: 1fr;
+    }
+    .cp-process-grid {
+        grid-template-columns: 1fr;
+    }
+    .cp-integration-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cp-integration-flow {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .cp-flow-arrow {
+        display: none;
+    }
+}
+
+/* --- Dark Mode --- */
+[data-theme="dark"] .cp-hero-badge {
+    background: rgba(167, 139, 250, 0.1);
+    border-color: rgba(167, 139, 250, 0.2);
+}
+
+[data-theme="dark"] .cp-label--pay {
+    background: rgba(96, 165, 250, 0.1);
+    color: #60a5fa;
+    border-color: rgba(96, 165, 250, 0.2);
+}
+
+[data-theme="dark"] .cp-label--pro {
+    background: rgba(251, 191, 36, 0.1);
+    color: #fbbf24;
+    border-color: rgba(251, 191, 36, 0.2);
+}
+
+[data-theme="dark"] .cp-label--devcloud {
+    background: rgba(167, 139, 250, 0.1);
+    border-color: rgba(167, 139, 250, 0.2);
+}
+
+[data-theme="dark"] .cp-about-icon {
+    background: rgba(167, 139, 250, 0.1);
+}
+
+[data-theme="dark"] .cp-checkout-card,
+[data-theme="dark"] .cp-pro-card,
+[data-theme="dark"] .cp-integration-card {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .cp-method--active {
+    background: rgba(167, 139, 250, 0.05);
+}
+
+[data-theme="dark"] .cp-flow--app {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: rgba(16, 185, 129, 0.15);
+}
+
+[data-theme="dark"] .cp-flow--devcloud {
+    background: rgba(167, 139, 250, 0.08);
+    border-color: rgba(167, 139, 250, 0.15);
+}
+
+[data-theme="dark"] .cp-flow--chargily {
+    background: rgba(96, 165, 250, 0.08);
+    border-color: rgba(96, 165, 250, 0.15);
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .cp-op--mobilis { background: #059669; }
+[data-theme="dark"] .cp-op--djezzy { background: #dc2626; }
+[data-theme="dark"] .cp-op--ooredoo { background: #dc2626; }
+[data-theme="dark"] .cp-op--idoom { background: #2563eb; }
