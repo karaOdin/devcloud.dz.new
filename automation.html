@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Automation — Agentic Workflows &amp; Integration | DevCloud</title>
-    <meta name="description" content="End-to-end business automation using agentic AI services and workflow tools like n8n. Connect your systems, eliminate manual work, and scale operations.">
+    <title data-i18n-title="auto_page.meta_title">Business Automation — Agentic Workflows &amp; Integration | DevCloud</title>
+    <meta name="description" content="End-to-end business automation using agentic AI services and workflow tools like n8n. Connect your systems, eliminate manual work, and scale operations." data-i18n-content="auto_page.meta_description">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="product-pages.css">
     <link rel="icon" type="image/jpeg" href="logo.jpg">
@@ -21,19 +21,24 @@
                 <span>DevCloud</span>
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="/#services">Services</a>
-                <a href="/#products">Products</a>
-                <a href="/#about">About</a>
+                <a href="/#services" data-i18n="nav.services">Services</a>
+                <a href="/#products" data-i18n="nav.products">Products</a>
+                <a href="/#about" data-i18n="nav.about">About</a>
 
-                <a href="/#contact">Contact</a>
+                <a href="/#contact" data-i18n="nav.contact">Contact</a>
             </div>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                     <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
-                <a href="/#contact" class="btn btn--primary btn--sm">Get in Touch</a>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <div class="lang-switcher">
+                    <button data-lang="en" class="lang-btn active">EN</button>
+                    <button data-lang="fr" class="lang-btn">FR</button>
+                    <button data-lang="ar" class="lang-btn">AR</button>
+                </div>
+                <a href="/#contact" class="btn btn--primary btn--sm" data-i18n="nav.cta">Get in Touch</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -50,19 +55,19 @@
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="15 18 9 12 15 6"/>
                     </svg>
-                    All Products
+                    <span data-i18n="auto_page.breadcrumb">All Products</span>
                 </a>
-                <div class="pp-hero-badge pp-badge--auto">Business Automation</div>
-                <h1>Stop doing manually what software can do for you</h1>
-                <p class="pp-hero-description">
+                <div class="pp-hero-badge pp-badge--auto" data-i18n="auto_page.hero_badge">Business Automation</div>
+                <h1 data-i18n="auto_page.hero_title">Stop doing manually what software can do for you</h1>
+                <p class="pp-hero-description" data-i18n="auto_page.hero_desc">
                     We build end-to-end workflow automation for companies using agentic AI services and
                     tools like n8n. Connect your CRM, ERP, email, databases, and third-party APIs into
                     seamless automated pipelines. Every repetitive process in your company is a candidate
                     for automation.
                 </p>
                 <div class="pp-hero-cta">
-                    <a href="/#contact" class="btn btn--primary btn--lg">Request an Assessment</a>
-                    <a href="#features" class="btn btn--ghost btn--lg">See Capabilities</a>
+                    <a href="/#contact" class="btn btn--primary btn--lg" data-i18n="auto_page.hero_cta1">Request an Assessment</a>
+                    <a href="#features" class="btn btn--ghost btn--lg" data-i18n="auto_page.hero_cta2">See Capabilities</a>
                 </div>
             </div>
         </div>
@@ -82,8 +87,8 @@
                             <line x1="4" y1="4" x2="9" y2="9"/>
                         </svg>
                     </div>
-                    <h3>Agentic Workflows</h3>
-                    <p>AI agents that make decisions, call APIs, and complete tasks autonomously based on rules and context.</p>
+                    <h3 data-i18n="auto_page.v1_title">Agentic Workflows</h3>
+                    <p data-i18n="auto_page.v1_desc">AI agents that make decisions, call APIs, and complete tasks autonomously based on rules and context.</p>
                 </div>
                 <div class="pp-value-card">
                     <div class="pp-value-icon pp-icon--auto">
@@ -93,8 +98,8 @@
                             <line x1="12" y1="22.08" x2="12" y2="12"/>
                         </svg>
                     </div>
-                    <h3>n8n-Powered Pipelines</h3>
-                    <p>Self-hosted n8n instances for visual workflow building, giving your team full visibility and control.</p>
+                    <h3 data-i18n="auto_page.v2_title">n8n-Powered Pipelines</h3>
+                    <p data-i18n="auto_page.v2_desc">Self-hosted n8n instances for visual workflow building, giving your team full visibility and control.</p>
                 </div>
                 <div class="pp-value-card">
                     <div class="pp-value-icon pp-icon--auto">
@@ -103,8 +108,8 @@
                             <path d="M8 21h8M12 17v4"/>
                         </svg>
                     </div>
-                    <h3>System Integration</h3>
-                    <p>Connect ERPs, CRMs, email, databases, payment gateways, and custom APIs into unified data flows.</p>
+                    <h3 data-i18n="auto_page.v3_title">System Integration</h3>
+                    <p data-i18n="auto_page.v3_desc">Connect ERPs, CRMs, email, databases, payment gateways, and custom APIs into unified data flows.</p>
                 </div>
             </div>
         </div>
@@ -114,9 +119,9 @@
     <section class="pp-features" id="features">
         <div class="container">
             <div class="section-intro">
-                <span class="label">Capabilities</span>
-                <h2>Automation that runs your back office while you focus on growth</h2>
-                <p>From invoice processing to lead routing, we automate the workflows that drain your team's time.</p>
+                <span class="label" data-i18n="auto_page.features_label">Capabilities</span>
+                <h2 data-i18n="auto_page.features_title">Automation that runs your back office while you focus on growth</h2>
+                <p data-i18n="auto_page.features_subtitle">From invoice processing to lead routing, we automate the workflows that drain your team's time.</p>
             </div>
 
             <div class="pp-features-list">
@@ -125,13 +130,13 @@
                 <div class="pp-feature-block">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">01</div>
-                        <h3>Visual Workflow Builder</h3>
-                        <p>Design automation pipelines with a visual drag-and-drop interface powered by n8n. Non-technical team members can understand what each workflow does. Developers can extend with custom code when needed.</p>
+                        <h3 data-i18n="auto_page.f1_title">Visual Workflow Builder</h3>
+                        <p data-i18n="auto_page.f1_desc">Design automation pipelines with a visual drag-and-drop interface powered by n8n. Non-technical team members can understand what each workflow does. Developers can extend with custom code when needed.</p>
                         <ul class="pp-feature-details">
-                            <li>Self-hosted n8n with your branding</li>
-                            <li>Visual canvas for building and editing workflows</li>
-                            <li>400+ pre-built connectors for common services</li>
-                            <li>Custom JavaScript and Python nodes for complex logic</li>
+                            <li data-i18n="auto_page.f1_d1">Self-hosted n8n with your branding</li>
+                            <li data-i18n="auto_page.f1_d2">Visual canvas for building and editing workflows</li>
+                            <li data-i18n="auto_page.f1_d3">400+ pre-built connectors for common services</li>
+                            <li data-i18n="auto_page.f1_d4">Custom JavaScript and Python nodes for complex logic</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -178,13 +183,13 @@
                 <div class="pp-feature-block reverse">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">02</div>
-                        <h3>Agentic AI Services</h3>
-                        <p>Go beyond simple if-then rules. Our agentic AI can read emails, classify intent, extract structured data from unstructured documents, make routing decisions, and escalate when uncertain — all without human intervention.</p>
+                        <h3 data-i18n="auto_page.f2_title">Agentic AI Services</h3>
+                        <p data-i18n="auto_page.f2_desc">Go beyond simple if-then rules. Our agentic AI can read emails, classify intent, extract structured data from unstructured documents, make routing decisions, and escalate when uncertain — all without human intervention.</p>
                         <ul class="pp-feature-details">
-                            <li>Email triage and intent classification</li>
-                            <li>Document data extraction from invoices, contracts, forms</li>
-                            <li>Smart routing based on content, priority, and workload</li>
-                            <li>Human-in-the-loop escalation for edge cases</li>
+                            <li data-i18n="auto_page.f2_d1">Email triage and intent classification</li>
+                            <li data-i18n="auto_page.f2_d2">Document data extraction from invoices, contracts, forms</li>
+                            <li data-i18n="auto_page.f2_d3">Smart routing based on content, priority, and workload</li>
+                            <li data-i18n="auto_page.f2_d4">Human-in-the-loop escalation for edge cases</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -224,13 +229,13 @@
                 <div class="pp-feature-block">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">03</div>
-                        <h3>CRM and ERP Integration</h3>
-                        <p>Sync data between your sales pipeline, accounting system, inventory, and customer support tools. No more copying data between spreadsheets. No more stale records in disconnected systems.</p>
+                        <h3 data-i18n="auto_page.f3_title">CRM and ERP Integration</h3>
+                        <p data-i18n="auto_page.f3_desc">Sync data between your sales pipeline, accounting system, inventory, and customer support tools. No more copying data between spreadsheets. No more stale records in disconnected systems.</p>
                         <ul class="pp-feature-details">
-                            <li>Bidirectional sync between CRM and ERP</li>
-                            <li>Automated lead-to-opportunity pipeline updates</li>
-                            <li>Invoice generation triggered by deal closure</li>
-                            <li>Real-time inventory updates across sales channels</li>
+                            <li data-i18n="auto_page.f3_d1">Bidirectional sync between CRM and ERP</li>
+                            <li data-i18n="auto_page.f3_d2">Automated lead-to-opportunity pipeline updates</li>
+                            <li data-i18n="auto_page.f3_d3">Invoice generation triggered by deal closure</li>
+                            <li data-i18n="auto_page.f3_d4">Real-time inventory updates across sales channels</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -257,13 +262,13 @@
                 <div class="pp-feature-block reverse">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">04</div>
-                        <h3>Automated Notifications and Alerts</h3>
-                        <p>Send the right notification to the right person at the right time. Trigger SMS alerts, email notifications, Slack messages, or WhatsApp updates based on workflow events and business rules.</p>
+                        <h3 data-i18n="auto_page.f4_title">Automated Notifications and Alerts</h3>
+                        <p data-i18n="auto_page.f4_desc">Send the right notification to the right person at the right time. Trigger SMS alerts, email notifications, Slack messages, or WhatsApp updates based on workflow events and business rules.</p>
                         <ul class="pp-feature-details">
-                            <li>Multi-channel: email, SMS, WhatsApp, Slack</li>
-                            <li>Conditional triggers based on data thresholds</li>
-                            <li>Scheduled digests and summary reports</li>
-                            <li>Escalation chains with timeout rules</li>
+                            <li data-i18n="auto_page.f4_d1">Multi-channel: email, SMS, WhatsApp, Slack</li>
+                            <li data-i18n="auto_page.f4_d2">Conditional triggers based on data thresholds</li>
+                            <li data-i18n="auto_page.f4_d3">Scheduled digests and summary reports</li>
+                            <li data-i18n="auto_page.f4_d4">Escalation chains with timeout rules</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -299,13 +304,13 @@
                 <div class="pp-feature-block">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">05</div>
-                        <h3>Document Processing Pipeline</h3>
-                        <p>Automate document-heavy workflows. Incoming invoices, purchase orders, contracts, and applications get parsed, validated, classified, and routed — without anyone opening a PDF manually.</p>
+                        <h3 data-i18n="auto_page.f5_title">Document Processing Pipeline</h3>
+                        <p data-i18n="auto_page.f5_desc">Automate document-heavy workflows. Incoming invoices, purchase orders, contracts, and applications get parsed, validated, classified, and routed — without anyone opening a PDF manually.</p>
                         <ul class="pp-feature-details">
-                            <li>OCR and AI-powered data extraction</li>
-                            <li>Automatic document classification by type</li>
-                            <li>Validation rules with error flagging</li>
-                            <li>Archival and retrieval with searchable metadata</li>
+                            <li data-i18n="auto_page.f5_d1">OCR and AI-powered data extraction</li>
+                            <li data-i18n="auto_page.f5_d2">Automatic document classification by type</li>
+                            <li data-i18n="auto_page.f5_d3">Validation rules with error flagging</li>
+                            <li data-i18n="auto_page.f5_d4">Archival and retrieval with searchable metadata</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -351,13 +356,13 @@
                 <div class="pp-feature-block reverse">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">06</div>
-                        <h3>Monitoring and Execution Logs</h3>
-                        <p>Every workflow execution is logged with input data, output data, timing, and status. When something fails, you know exactly where and why. Retry failed executions with one click.</p>
+                        <h3 data-i18n="auto_page.f6_title">Monitoring and Execution Logs</h3>
+                        <p data-i18n="auto_page.f6_desc">Every workflow execution is logged with input data, output data, timing, and status. When something fails, you know exactly where and why. Retry failed executions with one click.</p>
                         <ul class="pp-feature-details">
-                            <li>Complete execution history per workflow</li>
-                            <li>Step-by-step data inspection for debugging</li>
-                            <li>Failure alerts with automatic retry options</li>
-                            <li>Performance metrics and bottleneck detection</li>
+                            <li data-i18n="auto_page.f6_d1">Complete execution history per workflow</li>
+                            <li data-i18n="auto_page.f6_d2">Step-by-step data inspection for debugging</li>
+                            <li data-i18n="auto_page.f6_d3">Failure alerts with automatic retry options</li>
+                            <li data-i18n="auto_page.f6_d4">Performance metrics and bottleneck detection</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -401,11 +406,11 @@
     <section class="cta">
         <div class="container">
             <div class="cta-inner">
-                <h2>Which process should we automate first?</h2>
-                <p>We will map your operations, identify the highest-value automation targets, and build a working pipeline you can see in action.</p>
+                <h2 data-i18n="auto_page.cta_title">Which process should we automate first?</h2>
+                <p data-i18n="auto_page.cta_subtitle">We will map your operations, identify the highest-value automation targets, and build a working pipeline you can see in action.</p>
                 <div class="btn-group btn-group--center">
-                    <a href="/#contact" class="btn btn--white btn--lg">Request an Assessment</a>
-                    <a href="tel:+213555123456" class="btn btn--ghost-light btn--lg">Call Us Directly</a>
+                    <a href="/#contact" class="btn btn--white btn--lg" data-i18n="auto_page.cta_primary">Request an Assessment</a>
+                    <a href="tel:+213555123456" class="btn btn--ghost-light btn--lg" data-i18n="auto_page.cta_secondary">Call Us Directly</a>
                 </div>
             </div>
         </div>
@@ -420,45 +425,46 @@
                         <img src="logo.jpg" alt="DevCloud" class="nav-logo-img">
                         <span>DevCloud</span>
                     </a>
-                    <p>Enterprise software development and cloud solutions for organizations across Algeria.</p>
+                    <p data-i18n="footer.brand_desc">Enterprise software development and cloud solutions for organizations across Algeria.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Services</h4>
-                    <a href="/#services">Custom Development</a>
-                    <a href="/#services">SaaS Platforms</a>
-                    <a href="/#services">Cloud Infrastructure</a>
-                    <a href="/#services">API Integration</a>
+                    <h4 data-i18n="footer.services_title">Services</h4>
+                    <a href="/#services" data-i18n="footer.custom_dev">Custom Development</a>
+                    <a href="/#services" data-i18n="footer.saas">SaaS Platforms</a>
+                    <a href="/#services" data-i18n="footer.cloud">Cloud Infrastructure</a>
+                    <a href="/#services" data-i18n="footer.api">API Integration</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Products</h4>
+                    <h4 data-i18n="footer.products_title">Products</h4>
                     <a href="/cloudroutes">CloudRoutes</a>
                     <a href="/ai-chatbots">AI Chatbots</a>
                     <a href="/automation">Business Automation</a>
                     <a href="/chargily-partnership">Chargily Partnership</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Company</h4>
-                    <a href="/#about">About Us</a>
-    
-                    <a href="/#contact">Contact</a>
+                    <h4 data-i18n="footer.company_title">Company</h4>
+                    <a href="/#about" data-i18n="footer.about_us">About Us</a>
+
+                    <a href="/#contact" data-i18n="footer.contact_link">Contact</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer.contact_title">Contact</h4>
                     <a href="tel:+213555123456">+213 555 123 456</a>
                     <a href="mailto:contact@devcloud.dz">contact@devcloud.dz</a>
-                    <span>Algiers, Algeria</span>
+                    <span data-i18n="footer.location">Algiers, Algeria</span>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>2026 DevCloud. All rights reserved.</p>
+                <p data-i18n="footer.copyright">2026 DevCloud. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="#" data-i18n="footer.terms">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

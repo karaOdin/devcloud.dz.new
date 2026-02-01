@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chatbots — Self-Hosted LLM Assistants | DevCloud</title>
-    <meta name="description" content="Private, self-hosted AI chatbots with retrieval-augmented generation and fine-tuning. Your company knowledge, your servers, your control.">
+    <title data-i18n-title="ai_page.meta_title">AI Chatbots — Self-Hosted LLM Assistants | DevCloud</title>
+    <meta name="description" content="Private, self-hosted AI chatbots with retrieval-augmented generation and fine-tuning. Your company knowledge, your servers, your control." data-i18n-content="ai_page.meta_description">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="product-pages.css">
     <link rel="icon" type="image/jpeg" href="logo.jpg">
@@ -21,19 +21,24 @@
                 <span>DevCloud</span>
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="/#services">Services</a>
-                <a href="/#products">Products</a>
-                <a href="/#about">About</a>
+                <a href="/#services" data-i18n="nav.services">Services</a>
+                <a href="/#products" data-i18n="nav.products">Products</a>
+                <a href="/#about" data-i18n="nav.about">About</a>
 
-                <a href="/#contact">Contact</a>
+                <a href="/#contact" data-i18n="nav.contact">Contact</a>
             </div>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                     <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
                     <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
                 </button>
-                <a href="/#contact" class="btn btn--primary btn--sm">Get in Touch</a>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <div class="lang-switcher">
+                    <button data-lang="en" class="lang-btn active">EN</button>
+                    <button data-lang="fr" class="lang-btn">FR</button>
+                    <button data-lang="ar" class="lang-btn">AR</button>
+                </div>
+                <a href="/#contact" class="btn btn--primary btn--sm" data-i18n="nav.cta">Get in Touch</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -50,19 +55,19 @@
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="15 18 9 12 15 6"/>
                     </svg>
-                    All Products
+                    <span data-i18n="ai_page.breadcrumb">All Products</span>
                 </a>
-                <div class="pp-hero-badge pp-badge--ai">AI Chatbots</div>
-                <h1>Your company knowledge,<br>always available</h1>
-                <p class="pp-hero-description">
+                <div class="pp-hero-badge pp-badge--ai" data-i18n="ai_page.hero_badge">AI Chatbots</div>
+                <h1 data-i18n="ai_page.hero_title">Your company knowledge,<br>always available</h1>
+                <p class="pp-hero-description" data-i18n="ai_page.hero_desc">
                     Self-hosted chatbots powered by large language models. We deploy private AI assistants
                     that understand your business — trained on your documents, policies, and processes.
                     Retrieval-augmented generation and fine-tuning keep answers accurate. Everything runs
                     on your own infrastructure. Nothing leaves your servers.
                 </p>
                 <div class="pp-hero-cta">
-                    <a href="/#contact" class="btn btn--primary btn--lg">Request a Demo</a>
-                    <a href="#features" class="btn btn--ghost btn--lg">See Capabilities</a>
+                    <a href="/#contact" class="btn btn--primary btn--lg" data-i18n="ai_page.hero_cta1">Request a Demo</a>
+                    <a href="#features" class="btn btn--ghost btn--lg" data-i18n="ai_page.hero_cta2">See Capabilities</a>
                 </div>
             </div>
         </div>
@@ -78,8 +83,8 @@
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         </svg>
                     </div>
-                    <h3>Fully Self-Hosted</h3>
-                    <p>Your data never leaves your servers. Complete sovereignty over company knowledge and customer conversations.</p>
+                    <h3 data-i18n="ai_page.v1_title">Fully Self-Hosted</h3>
+                    <p data-i18n="ai_page.v1_desc">Your data never leaves your servers. Complete sovereignty over company knowledge and customer conversations.</p>
                 </div>
                 <div class="pp-value-card">
                     <div class="pp-value-icon pp-icon--ai">
@@ -88,8 +93,8 @@
                             <line x1="21" y1="21" x2="16.65" y2="16.65"/>
                         </svg>
                     </div>
-                    <h3>RAG-Powered Answers</h3>
-                    <p>Retrieval-augmented generation pulls real information from your documents before the model generates a response.</p>
+                    <h3 data-i18n="ai_page.v2_title">RAG-Powered Answers</h3>
+                    <p data-i18n="ai_page.v2_desc">Retrieval-augmented generation pulls real information from your documents before the model generates a response.</p>
                 </div>
                 <div class="pp-value-card">
                     <div class="pp-value-icon pp-icon--ai">
@@ -97,8 +102,8 @@
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
                         </svg>
                     </div>
-                    <h3>Fine-Tuned to Your Domain</h3>
-                    <p>Models trained on your terminology, your processes, and your context. Accurate answers on the first try.</p>
+                    <h3 data-i18n="ai_page.v3_title">Fine-Tuned to Your Domain</h3>
+                    <p data-i18n="ai_page.v3_desc">Models trained on your terminology, your processes, and your context. Accurate answers on the first try.</p>
                 </div>
             </div>
         </div>
@@ -108,9 +113,9 @@
     <section class="pp-features" id="features">
         <div class="container">
             <div class="section-intro">
-                <span class="label">Capabilities</span>
-                <h2>AI that knows your business as well as your best employee</h2>
-                <p>From document ingestion to customer-facing deployment, every piece is built for enterprise use.</p>
+                <span class="label" data-i18n="ai_page.features_label">Capabilities</span>
+                <h2 data-i18n="ai_page.features_title">AI that knows your business as well as your best employee</h2>
+                <p data-i18n="ai_page.features_subtitle">From document ingestion to customer-facing deployment, every piece is built for enterprise use.</p>
             </div>
 
             <div class="pp-features-list">
@@ -119,13 +124,13 @@
                 <div class="pp-feature-block">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">01</div>
-                        <h3>Private Document Ingestion</h3>
-                        <p>Feed the system your internal documents — PDFs, Word files, spreadsheets, knowledge bases, wikis, and FAQ archives. The pipeline chunks, embeds, and indexes everything into a vector store optimized for fast retrieval.</p>
+                        <h3 data-i18n="ai_page.f1_title">Private Document Ingestion</h3>
+                        <p data-i18n="ai_page.f1_desc">Feed the system your internal documents — PDFs, Word files, spreadsheets, knowledge bases, wikis, and FAQ archives. The pipeline chunks, embeds, and indexes everything into a vector store optimized for fast retrieval.</p>
                         <ul class="pp-feature-details">
-                            <li>Supports PDF, DOCX, XLSX, HTML, Markdown, and plain text</li>
-                            <li>Automatic chunking with configurable overlap</li>
-                            <li>Vector embedding using open-source models</li>
-                            <li>Incremental updates — add new documents without re-indexing</li>
+                            <li data-i18n="ai_page.f1_d1">Supports PDF, DOCX, XLSX, HTML, Markdown, and plain text</li>
+                            <li data-i18n="ai_page.f1_d2">Automatic chunking with configurable overlap</li>
+                            <li data-i18n="ai_page.f1_d3">Vector embedding using open-source models</li>
+                            <li data-i18n="ai_page.f1_d4">Incremental updates — add new documents without re-indexing</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -184,13 +189,13 @@
                 <div class="pp-feature-block reverse">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">02</div>
-                        <h3>Retrieval-Augmented Generation</h3>
-                        <p>When a user asks a question, the system retrieves the most relevant passages from your indexed knowledge base and provides them as context to the language model. The result is grounded, factual answers instead of hallucinated guesses.</p>
+                        <h3 data-i18n="ai_page.f2_title">Retrieval-Augmented Generation</h3>
+                        <p data-i18n="ai_page.f2_desc">When a user asks a question, the system retrieves the most relevant passages from your indexed knowledge base and provides them as context to the language model. The result is grounded, factual answers instead of hallucinated guesses.</p>
                         <ul class="pp-feature-details">
-                            <li>Semantic search across your entire knowledge base</li>
-                            <li>Source citations included with every answer</li>
-                            <li>Configurable retrieval depth and relevance thresholds</li>
-                            <li>Fallback responses when confidence is low</li>
+                            <li data-i18n="ai_page.f2_d1">Semantic search across your entire knowledge base</li>
+                            <li data-i18n="ai_page.f2_d2">Source citations included with every answer</li>
+                            <li data-i18n="ai_page.f2_d3">Configurable retrieval depth and relevance thresholds</li>
+                            <li data-i18n="ai_page.f2_d4">Fallback responses when confidence is low</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -219,13 +224,13 @@
                 <div class="pp-feature-block">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">03</div>
-                        <h3>Domain-Specific Fine-Tuning</h3>
-                        <p>Go beyond RAG. Fine-tune open-source LLMs on your company's language, terminology, and decision patterns. The model learns how your business communicates — not just what it knows.</p>
+                        <h3 data-i18n="ai_page.f3_title">Domain-Specific Fine-Tuning</h3>
+                        <p data-i18n="ai_page.f3_desc">Go beyond RAG. Fine-tune open-source LLMs on your company's language, terminology, and decision patterns. The model learns how your business communicates — not just what it knows.</p>
                         <ul class="pp-feature-details">
-                            <li>Fine-tuning on company-specific Q&A pairs</li>
-                            <li>Tone and style alignment to your brand voice</li>
-                            <li>Industry terminology and abbreviation handling</li>
-                            <li>Continuous improvement with feedback loops</li>
+                            <li data-i18n="ai_page.f3_d1">Fine-tuning on company-specific Q&A pairs</li>
+                            <li data-i18n="ai_page.f3_d2">Tone and style alignment to your brand voice</li>
+                            <li data-i18n="ai_page.f3_d3">Industry terminology and abbreviation handling</li>
+                            <li data-i18n="ai_page.f3_d4">Continuous improvement with feedback loops</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -261,13 +266,13 @@
                 <div class="pp-feature-block reverse">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">04</div>
-                        <h3>Multi-Channel Deployment</h3>
-                        <p>Deploy your chatbot wherever your customers and employees already are. Embed it on your website, connect it to WhatsApp, integrate it into your internal tools, or expose it via API.</p>
+                        <h3 data-i18n="ai_page.f4_title">Multi-Channel Deployment</h3>
+                        <p data-i18n="ai_page.f4_desc">Deploy your chatbot wherever your customers and employees already are. Embed it on your website, connect it to WhatsApp, integrate it into your internal tools, or expose it via API.</p>
                         <ul class="pp-feature-details">
-                            <li>Embeddable web widget for your website</li>
-                            <li>WhatsApp Business API integration</li>
-                            <li>Internal tools integration via REST API</li>
-                            <li>Custom frontend with your branding</li>
+                            <li data-i18n="ai_page.f4_d1">Embeddable web widget for your website</li>
+                            <li data-i18n="ai_page.f4_d2">WhatsApp Business API integration</li>
+                            <li data-i18n="ai_page.f4_d3">Internal tools integration via REST API</li>
+                            <li data-i18n="ai_page.f4_d4">Custom frontend with your branding</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -319,13 +324,13 @@
                 <div class="pp-feature-block">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">05</div>
-                        <h3>Conversation Analytics</h3>
-                        <p>Track what users ask, which answers satisfy them, and where the system struggles. Use analytics to improve your knowledge base, refine the model, and measure deflection rates against human support.</p>
+                        <h3 data-i18n="ai_page.f5_title">Conversation Analytics</h3>
+                        <p data-i18n="ai_page.f5_desc">Track what users ask, which answers satisfy them, and where the system struggles. Use analytics to improve your knowledge base, refine the model, and measure deflection rates against human support.</p>
                         <ul class="pp-feature-details">
-                            <li>Query frequency and topic clustering</li>
-                            <li>User satisfaction scoring per conversation</li>
-                            <li>Unanswered question detection for knowledge gaps</li>
-                            <li>Support deflection rate tracking</li>
+                            <li data-i18n="ai_page.f5_d1">Query frequency and topic clustering</li>
+                            <li data-i18n="ai_page.f5_d2">User satisfaction scoring per conversation</li>
+                            <li data-i18n="ai_page.f5_d3">Unanswered question detection for knowledge gaps</li>
+                            <li data-i18n="ai_page.f5_d4">Support deflection rate tracking</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -366,13 +371,13 @@
                 <div class="pp-feature-block reverse">
                     <div class="pp-feature-text">
                         <div class="pp-feature-number">06</div>
-                        <h3>Role-Based Access and Admin Control</h3>
-                        <p>Control who can manage the knowledge base, who can view analytics, and which chatbot personas serve which departments. Full audit logging on every configuration change.</p>
+                        <h3 data-i18n="ai_page.f6_title">Role-Based Access and Admin Control</h3>
+                        <p data-i18n="ai_page.f6_desc">Control who can manage the knowledge base, who can view analytics, and which chatbot personas serve which departments. Full audit logging on every configuration change.</p>
                         <ul class="pp-feature-details">
-                            <li>Admin, editor, and viewer roles</li>
-                            <li>Per-department chatbot personas and knowledge scoping</li>
-                            <li>Audit log on all changes</li>
-                            <li>SSO integration with your identity provider</li>
+                            <li data-i18n="ai_page.f6_d1">Admin, editor, and viewer roles</li>
+                            <li data-i18n="ai_page.f6_d2">Per-department chatbot personas and knowledge scoping</li>
+                            <li data-i18n="ai_page.f6_d3">Audit log on all changes</li>
+                            <li data-i18n="ai_page.f6_d4">SSO integration with your identity provider</li>
                         </ul>
                     </div>
                     <div class="pp-feature-visual">
@@ -416,11 +421,11 @@
     <section class="cta">
         <div class="container">
             <div class="cta-inner">
-                <h2>Put your company knowledge to work</h2>
-                <p>We will assess your documents, recommend the right model architecture, and deploy a working prototype on your infrastructure.</p>
+                <h2 data-i18n="ai_page.cta_title">Put your company knowledge to work</h2>
+                <p data-i18n="ai_page.cta_subtitle">We will assess your documents, recommend the right model architecture, and deploy a working prototype on your infrastructure.</p>
                 <div class="btn-group btn-group--center">
-                    <a href="/#contact" class="btn btn--white btn--lg">Start a Conversation</a>
-                    <a href="tel:+213555123456" class="btn btn--ghost-light btn--lg">Call Us Directly</a>
+                    <a href="/#contact" class="btn btn--white btn--lg" data-i18n="ai_page.cta_primary">Start a Conversation</a>
+                    <a href="tel:+213555123456" class="btn btn--ghost-light btn--lg" data-i18n="ai_page.cta_secondary">Call Us Directly</a>
                 </div>
             </div>
         </div>
@@ -435,45 +440,46 @@
                         <img src="logo.jpg" alt="DevCloud" class="nav-logo-img">
                         <span>DevCloud</span>
                     </a>
-                    <p>Enterprise software development and cloud solutions for organizations across Algeria.</p>
+                    <p data-i18n="footer.brand_desc">Enterprise software development and cloud solutions for organizations across Algeria.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Services</h4>
-                    <a href="/#services">Custom Development</a>
-                    <a href="/#services">SaaS Platforms</a>
-                    <a href="/#services">Cloud Infrastructure</a>
-                    <a href="/#services">API Integration</a>
+                    <h4 data-i18n="footer.services_title">Services</h4>
+                    <a href="/#services" data-i18n="footer.custom_dev">Custom Development</a>
+                    <a href="/#services" data-i18n="footer.saas">SaaS Platforms</a>
+                    <a href="/#services" data-i18n="footer.cloud">Cloud Infrastructure</a>
+                    <a href="/#services" data-i18n="footer.api">API Integration</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Products</h4>
+                    <h4 data-i18n="footer.products_title">Products</h4>
                     <a href="/cloudroutes">CloudRoutes</a>
                     <a href="/ai-chatbots">AI Chatbots</a>
                     <a href="/automation">Business Automation</a>
                     <a href="/chargily-partnership">Chargily Partnership</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Company</h4>
-                    <a href="/#about">About Us</a>
-    
-                    <a href="/#contact">Contact</a>
+                    <h4 data-i18n="footer.company_title">Company</h4>
+                    <a href="/#about" data-i18n="footer.about_us">About Us</a>
+
+                    <a href="/#contact" data-i18n="footer.contact_link">Contact</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer.contact_title">Contact</h4>
                     <a href="tel:+213555123456">+213 555 123 456</a>
                     <a href="mailto:contact@devcloud.dz">contact@devcloud.dz</a>
-                    <span>Algiers, Algeria</span>
+                    <span data-i18n="footer.location">Algiers, Algeria</span>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>2026 DevCloud. All rights reserved.</p>
+                <p data-i18n="footer.copyright">2026 DevCloud. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="#" data-i18n="footer.terms">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
