@@ -1924,8 +1924,37 @@ p {
         gap: 48px;
     }
 
+    .featured-grid--reverse .featured-content,
+    .featured-grid--reverse .featured-visual {
+        order: unset;
+    }
+
     .featured-content {
         max-width: 100%;
+    }
+
+    .workflow-mock {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .wf-connector {
+        display: none;
+    }
+
+    .wf-node {
+        min-width: 70px;
+        padding: 10px 12px;
+    }
+
+    .workflow-stats {
+        gap: 16px;
+    }
+
+    .chat-bubble {
+        max-width: 90%;
+        font-size: 0.75rem;
     }
 
     .partnership-grid {
@@ -2216,6 +2245,47 @@ p {
 
     .trust-item img {
         height: 42px;
+    }
+
+    .featured-grid {
+        gap: 32px;
+    }
+
+    .wf-node {
+        min-width: 60px;
+        padding: 8px 10px;
+    }
+
+    .wf-node span {
+        font-size: 0.6rem;
+    }
+
+    .workflow-stats {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .wf-stat strong {
+        font-size: 0.8rem;
+    }
+
+    .chat-bubble {
+        font-size: 0.7rem;
+        padding: 8px 12px;
+    }
+
+    .chat-source {
+        font-size: 0.6rem;
+    }
+
+    .browser-body--chat {
+        padding: 14px;
+        min-height: 200px;
+    }
+
+    .browser-body--workflow {
+        padding: 14px;
+        min-height: 180px;
     }
 }
 
