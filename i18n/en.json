@@ -68,6 +68,37 @@
     "next_arrival": "Next Arrival",
     "occupancy": "Occupancy"
   },
+  "featured_ai": {
+    "label": "AI Product",
+    "title": "AI Chatbots: Self-Hosted LLM Assistants",
+    "desc": "Private chatbots powered by large language models, deployed on your own infrastructure. Retrieval-augmented generation pulls answers from your documents. Fine-tuning aligns the model to your business language. Nothing leaves your servers.",
+    "f1": "Self-hosted on your infrastructure — full data sovereignty",
+    "f2": "RAG-powered answers with source citations",
+    "f3": "Domain-specific fine-tuning on your company data",
+    "f4": "Deploy on website, WhatsApp, or internal tools",
+    "f5": "Conversation analytics and satisfaction tracking",
+    "cta_primary": "Learn More",
+    "cta_secondary": "Request a Demo",
+    "chat_q": "What is the refund policy for monthly passes?",
+    "chat_a": "Monthly passes can be refunded within 7 days of purchase if unused. After first use, a prorated refund applies based on remaining days.",
+    "chat_source": "Source: Policy Doc v3.2, Section 4.1",
+    "chat_q2": "How do I apply for a student discount?"
+  },
+  "featured_auto": {
+    "label": "Automation Product",
+    "title": "Business Automation: Agentic Workflows",
+    "desc": "End-to-end workflow automation using agentic AI services and tools like n8n. We connect your CRM, ERP, email, databases, and third-party APIs into seamless automated pipelines that eliminate manual work.",
+    "f1": "Visual workflow builder powered by n8n",
+    "f2": "AI agents that classify, route, and process documents",
+    "f3": "CRM, ERP, and payment gateway integration",
+    "f4": "Multi-channel notifications: email, SMS, WhatsApp, Slack",
+    "f5": "Full execution logs with one-click retry",
+    "cta_primary": "Learn More",
+    "cta_secondary": "Request Assessment",
+    "wf_executions": "Executions",
+    "wf_success": "Success Rate",
+    "wf_avg": "Avg Time"
+  },
   "products": {
     "label": "Our Products",
     "title": "Three platforms, one mission: digitize your operations",

@@ -68,6 +68,37 @@
     "next_arrival": "Prochaine arrivée",
     "occupancy": "Taux d'occupation"
   },
+  "featured_ai": {
+    "label": "Produit IA",
+    "title": "Chatbots IA : assistants LLM auto-hébergés",
+    "desc": "Chatbots privés alimentés par des grands modèles de langage, déployés sur votre propre infrastructure. La génération augmentée par récupération (RAG) extrait les réponses de vos documents. L'ajustement fin aligne le modèle sur le langage de votre entreprise. Rien ne quitte vos serveurs.",
+    "f1": "Auto-hébergé sur votre infrastructure — souveraineté totale des données",
+    "f2": "Réponses alimentées par RAG avec citations des sources",
+    "f3": "Ajustement fin spécifique à votre domaine sur les données de votre entreprise",
+    "f4": "Déploiement sur site web, WhatsApp ou outils internes",
+    "f5": "Analytique conversationnelle et suivi de la satisfaction",
+    "cta_primary": "En savoir plus",
+    "cta_secondary": "Demander une démo",
+    "chat_q": "Quelle est la politique de remboursement pour les abonnements mensuels ?",
+    "chat_a": "Les abonnements mensuels peuvent être remboursés dans les 7 jours suivant l'achat s'ils n'ont pas été utilisés. Après la première utilisation, un remboursement au prorata s'applique en fonction des jours restants.",
+    "chat_source": "Source : Document de politique v3.2, Section 4.1",
+    "chat_q2": "Comment demander une réduction étudiante ?"
+  },
+  "featured_auto": {
+    "label": "Produit Automatisation",
+    "title": "Automatisation métier : workflows agentiques",
+    "desc": "Automatisation complète des flux de travail grâce à des services d'IA agentique et des outils comme n8n. Nous connectons votre CRM, ERP, messagerie, bases de données et API tierces dans des pipelines automatisés fluides qui éliminent le travail manuel.",
+    "f1": "Constructeur visuel de workflows propulsé par n8n",
+    "f2": "Agents IA qui classifient, routent et traitent les documents",
+    "f3": "Intégration CRM, ERP et passerelles de paiement",
+    "f4": "Notifications multi-canal : e-mail, SMS, WhatsApp, Slack",
+    "f5": "Journaux d'exécution complets avec relance en un clic",
+    "cta_primary": "En savoir plus",
+    "cta_secondary": "Demander une évaluation",
+    "wf_executions": "Exécutions",
+    "wf_success": "Taux de réussite",
+    "wf_avg": "Temps moyen"
+  },
   "products": {
     "label": "Nos produits",
     "title": "Trois plateformes, une mission : numériser vos opérations",
